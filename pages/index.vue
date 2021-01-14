@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+    <div id="home" class="grid grid-cols-1 md:grid-cols-2 items-center">
       <div class="py-40 tracking-wide space-y-6">
         <p class="text-xl my-10">Welcome!</p>
         <h3 class="text-3xl">
@@ -11,7 +11,6 @@
       </div>
       <img src="../static/images/jumbotron.png">
     </div>
-    <h3 class="text-2xl text-center mt-32">About Me</h3>
     <About />
     <Project />
   </div>
