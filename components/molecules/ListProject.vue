@@ -1,18 +1,21 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 text-sm tracking-wider rounded-md leading-8 my-5">
+  <div class="grid grid-cols-1 lg:grid-cols-3 md:gap-10 text-sm tracking-wider rounded-md leading-8 mt-5 mb-10">
     <div class="block md:flex items-center gap-5">
-      <img src="../../static/images/ankasa.png"/>
+      <img src="../../static/images/ankasa.png" class="mx-auto" />
     </div>
-    <div class="space-y-5">
+    <div class="space-y-5 col-span-2">
       <h3 class="text-2xl">{{ title }}</h3>
-      <p class="text-sm">{{ desc }}</p>
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-2">
-          <div class="bg-navy rounded-full text-white text-xs px-4" v-for="(x, y) in tech" :key="y">
+      <p class="text-sm clamp line-2">{{ desc }}</p>
+      <div class="block md:flex items-center justify-between">
+        <div class="grid grid-cols-3 items-center gap-2">
+          <div class="bg-navy rounded-full text-white text-center text-xs px-2" v-for="(x, y) in tech" :key="y">
             {{ x }}
           </div>
         </div>
-        <p class="barcode">{{ scan }}</p>
+        <div class="flex items-center gap-3 my-3 md:my-0 mr-5 justify-center">
+          <a href="https://github.com/shofira/ankasa" target="_blank"><Icon icon="lab la-github text-3xl"/></a>
+          <a href="https://github.com/shofira/ankasa" target="_blank" to=""><Icon icon="las la-barcode text-3xl"/></a>
+        </div>
       </div>
     </div>
   </div>
@@ -20,13 +23,17 @@
 
 <script>
 export default {
-  props: ['title', 'desc', 'tech', 'scan'],
+  props: ['url', 'title', 'desc', 'tech', 'scan'],
 }
 </script>
 
 <style scoped>
-.barcode {
-  font-family: 'Libre Barcode 39', cursive;
-  font-size: 1.5rem;
+.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+ }
+.clamp, .line-2{ 
+  -webkit-line-clamp: 2;
 }
 </style>

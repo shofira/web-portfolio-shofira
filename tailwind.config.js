@@ -16,7 +16,7 @@ module.exports = {
         light: '#ffdca4',
         navy: '#293543',
         orange: '#F7A14C',
-        orange: '#B3E1DC',
+        lightBlue: '#B3E1DC',
       }
     },
   },

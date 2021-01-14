@@ -21,6 +21,7 @@ export default {
 
   plugins: [
     { src: '~/plugins/vue-scroll-to.js', mode: 'client' },
+    { src: '~/plugins/vue-qr.js', mode: 'client' },
   ],
 
   components: true,

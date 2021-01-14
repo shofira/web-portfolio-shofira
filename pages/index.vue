@@ -13,6 +13,7 @@
     </div>
     <About />
     <Project />
+    <Skills />
   </div>
 </template>
 
