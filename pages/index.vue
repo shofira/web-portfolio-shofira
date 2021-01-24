@@ -1,36 +1,41 @@
 <template>
   <div>
-    <div id="home" class="grid grid-cols-1 md:grid-cols-2 items-center">
-      <div class="py-40 tracking-wide space-y-6">
-        <p class="text-xl my-10">Welcome!</p>
-        <h3 class="text-3xl">
-          I'm Shofira Khairunnisa <br>
-          as a <span class="text-secondary">Frontend Developer</span>
+    <div id="home" class="grid grid-cols-1 md:grid-cols-2 items-center h-screen">
+      <div class="tracking-wide space-y-6">
+        <p class="text-lg md:text-xl my-10">Welcome!</p>
+        <h3 class="text-2xl md:text-3xl lg:text-4xl">
+          I'm Shofira Khairunnisa
+          <div class="flex">
+            as a &nbsp; <div class="typing text-secondary">Frontend Developer.</div>
+          </div>
         </h3>
-        <button class="btn-outline-secondary" @click="toAbout">Get to Know Me</button>
+        <button class="btn-outline-secondary" v-scroll-to="'#about'">Get to Know Me</button>
       </div>
       <img src="../static/images/jumbotron.png">
     </div>
     <About />
     <Project />
     <Skills />
+    <Contact />
   </div>
 </template>
 
-<script>
-export default {
-  methods: {
-    toAbout() {
-      this.$router.push('/#about')
-    }
+<style scoped>
+.typing {
+  width: 17ch;
+  animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+@keyframes typing {
+  from {
+    width: 0
   }
 }
-</script>
-
-<style scoped>
-.bg-image {
-  background-image: url(../static/images/bg1.png);
-  background-position: center;
-  background-size: cover;
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 </style>
