@@ -1,5 +1,5 @@
 export default {
-  ssr: false,
+  // ssr: false,
   head: {
     title: 'Portfolio Shofira',
     meta: [
@@ -17,6 +17,10 @@ export default {
   css: [
     '~assets/css/main.css',
   ],
+
+  purgeCSS: {    
+    whitelist: ['dark-mode'],  
+  },
 
   plugins: [
     { src: '~/plugins/vue-scroll-to.js', mode: 'client' },

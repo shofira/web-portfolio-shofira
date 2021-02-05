@@ -12,24 +12,13 @@
         <button class="border border-orange dark:border-secondary text-orange dark:text-secondary p-4 rounded-md text-sm shadow-md focus:outline-none" v-scroll-to="'#about'">Get to Know Me</button>
         <Contact />
       </div>
-      <img src="../static/images/jumbotron.png" v-show="isMode==='light'">
-      <img src="../static/images/dark1.png" v-show="isMode==='dark'">
+      <img src="../static/images/landing.png">
     </div>
     <About />
     <Project />
     <Skills />
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      isMode: localStorage.getItem('nuxt-color-mode'),
-    }
-  },
-}
-</script>
 
 <style scoped>
 .typing {
