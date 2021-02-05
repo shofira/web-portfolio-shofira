@@ -32,6 +32,7 @@ export default {
 
   modules: [
     'vue-scrollto/nuxt',
+    'nuxt-i18n'
   ],
 
   build: {

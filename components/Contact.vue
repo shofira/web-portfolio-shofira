@@ -1,11 +1,11 @@
 <template>
-  <div id="contact" class="mt-32 mb-20">
-    <h3 class="text-2xl text-center">Contact Me</h3>
-    <div class="grid grid-cols-3 md:flex items-center justify-around text-center my-8">
-      <div v-for="(x,y) in skill" :key="y" >
-        <Icon :icon="x" class="text-6xl" />
-      </div>
-    </div>
+  <div class="flex items-center text-orange">
+    <a :href="x[1]" target="_blank" v-for="(x,y) in contact" :key="y" class="mr-5">
+      <Icon :icon="x[0]" class="text-2xl" />
+    </a>
+    <a href = "mailto:shofirakhairunnisa@gmail.com?subject=Hiring&body=Message" target="_blank" class="mr-5">
+      <Icon icon="las la-envelope" class="text-2xl" />
+    </a>
   </div>
 </template>
 
@@ -13,7 +13,10 @@
 export default {
   data() {
     return {
-      skill: ['lab la-github', 'lab la-linkedin-in text-blue-700', 'las la-envelope-open text-red-700',]
+      contact: [
+        ['lab la-github', 'https://github.com/shofira'],
+        ['lab la-linkedin-in', 'https://www.linkedin.com/in/shofirk/']
+      ],
     }
   },
 }

@@ -10,7 +10,7 @@
           <p class="clamp line-2 tracking-wide leading-8" id="show">An organized person and motivated to develop my skills and want to learn new things in order to improve quality to be professional. <br> Based on my background in IT, I have experience developing web-based programs using the Laravel framework. After graduating from high school, join the Bootcamp coding for Fullstack Web Developer at Arkademy, what was learned during the Bootcamp is Vue Js for the frontend and Node and Express Js for the Backend.</p>
           <p class="text-gray-600 cursor-pointer" @click="showMore" id="more">See More</p>
         </div>
-        <a href="https://drive.google.com/file/d/1Z_gPM5cwgGd978R1IpTIYUbph5gkszBv/view?usp=sharing" target="_blank" class="border border-secondary text-secondary p-4 rounded-md text-sm shadow-md">
+        <a href="https://drive.google.com/file/d/15x6gBWTRyKqWUl_Da0Cex-V26GSRBpEe/view?usp=sharing" target="_blank" class="border border-orange text-orange p-4 rounded-md text-sm shadow-md">
           Download CV <i class="las la-download text-lg"></i>
         </a>
       </div>

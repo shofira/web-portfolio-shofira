@@ -6,17 +6,17 @@
         <h3 class="text-2xl md:text-3xl lg:text-4xl">
           I'm Shofira Khairunnisa
           <div class="flex">
-            as a &nbsp; <div class="typing text-secondary">Frontend Developer.</div>
+            as a &nbsp; <div class="typing text-orange">Frontend Developer.</div>
           </div>
         </h3>
-        <button class="btn-outline-secondary" v-scroll-to="'#about'">Get to Know Me</button>
+        <button class="btn-outline-orange" v-scroll-to="'#about'">Get to Know Me</button>
+        <Contact />
       </div>
       <img src="../static/images/jumbotron.png">
     </div>
     <About />
     <Project />
     <Skills />
-    <Contact />
   </div>
 </template>
 
