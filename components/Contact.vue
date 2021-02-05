@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center text-orange">
+  <div class="flex items-center text-orange dark:text-secondary">
     <a :href="x[1]" target="_blank" v-for="(x,y) in contact" :key="y" class="mr-5">
       <Icon :icon="x[0]" class="text-2xl" />
     </a>

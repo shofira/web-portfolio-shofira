@@ -3,7 +3,7 @@
     <div class="block md:flex items-center gap-5">
       <img :src="require(`../../static/images/${url}`)" class="mx-auto" />
     </div>
-    <div class="space-y-5 col-span-2">
+    <div class="space-y-5 col-span-2 dark:text-light">
       <h3 class="text-xl mt-3 md:mt-3">{{ title }}</h3>
       <p class="text-sm">{{ desc }}</p>
       <div class="block md:flex items-center justify-between">
@@ -12,7 +12,7 @@
             {{ x }}
           </div>
         </div>
-        <div class="flex items-center gap-3 justify-center mt-5 md:mt-0">
+        <div class="flex items-center gap-3 justify-center mt-5 md:mt-0 ">
           <a :href="github" target="_blank"><Icon icon="lab la-github text-3xl"/></a>
           <a :href="scan" target="_blank"><Icon icon="las la-barcode text-3xl"/></a>
         </div>

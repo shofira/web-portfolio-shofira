@@ -1,9 +1,9 @@
 <template>
   <div id="skill" class="mt-32 mb-20">
-    <h3 class="text-2xl text-center">My Skills</h3>
-    <div class="grid grid-cols-3 md:flex items-center justify-around text-center my-8">
+    <h3 class="text-2xl text-center dark:text-light">My Skills</h3>
+    <div class="grid grid-cols-3 md:flex items-center justify-around text-center">
       <div v-for="(x,y) in skill" :key="y" >
-        <Icon :icon="x" class="text-6xl" />
+        <Icon :icon="x" class="text-6xl mt-8" />
       </div>
     </div>
   </div>

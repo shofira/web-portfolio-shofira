@@ -1,6 +1,6 @@
 <template>
   <div id="project">
-    <h3 class="text-2xl text-center mt-32">My Project</h3>
+    <h3 class="text-2xl text-center mt-32 dark:text-light">My Project</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 md:gap-5">
       <ListProject v-for="(x, y) in list" :key="y" 
       :title="x[1]" :desc="x[2]" :tech="x[3]" :scan="x[4]"

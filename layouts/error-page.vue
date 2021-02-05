@@ -1,5 +1,7 @@
 <template>
-  <Nuxt class="container" />
+  <div class="bg-gray-200 dark:bg-gray-900">
+    <Nuxt class="container" />
+  </div>
 </template>
 
 <style>
