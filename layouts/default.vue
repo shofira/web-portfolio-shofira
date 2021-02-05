@@ -1,6 +1,7 @@
 <template>
   <div class="bg-white dark:bg-gray-800">
     <Navbar />
+    <NavbarMobile />
     <Nuxt class="container" />
     <Footer />
   </div>
