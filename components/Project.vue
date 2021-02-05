@@ -1,7 +1,7 @@
 <template>
   <div id="project">
     <h3 class="text-2xl text-center mt-32 dark:text-light">My Project</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-8">
       <ListProject v-for="(x, y) in list" :key="y" 
       :title="x[1]" :desc="x[2]" :tech="x[3]" :scan="x[4]"
       :url="x[0]" :github="x[5]" />
@@ -17,10 +17,10 @@ export default {
   data() {
     return {
       list: [
-        ['ankasa.png', 'Ankasa Ticketing', 'Aplikasi ini merupakan projek tim, yang bertujuan untuk mempermudah user dalam melakukan transaksi booking tiket pesawat. Aplikasi ini dilengkapi dengan fitur search dan booking tiket', ['Vue Js', 'Express Js', 'MYSQL', 'Bootstrap'], 'bit.ly/37FifFw', 'https://github.com/shofira/ankasa'],
-        ['arkachat.png', 'ArkaChat', 'ArkaChat merupakan aplikasi chatting yang bertujuan untuk mempermudah komunikasi antar user, dilengkapi dengan fitur chat realtime, dan crud data users.', ['Vue Js', 'Express Js', 'MYSQL', 'Bootstrap', 'Socket.Io'], 'bit.ly/37FifFw', 'https://github.com/shofira/arkaChat'],
-        ['arkahire.png', 'ArkaHire', 'Aplikasi ini merupakan project team yang bertujuan untuk mempermudah komunikasi antara Perusahaan dan job seeker dalam hal hire job. Dilengkapi dengan fitur sort, search, dan chat.', ['Vue Js', 'Express Js', 'MYSQL', 'Bootstrap', 'Socket.Io'], 'bit.ly/37FifFw', 'https://github.com/shofira/peworld-frontend'],
-        ['arkapos.png', 'ArkaPos', 'Merupakan aplikasi Point Of Sale yang bertujuan untuk membantu user dalam melakukan kegiatan transaksi jual-beli. Aplikasi ini dilengkapi dengan sort dan crud product.', ['Vue Js', 'Express Js', 'MYSQL', 'Bootstrap'], 'bit.ly/37FifFw', 'https://github.com/shofira/ArkaPos'],
+        ['ankasa.png', 'Ankasa Ticketing', 'Ankasa Ticketing is a team project, which to facilitate users in booking flight ticket transactions. This application equipped with search and ticket booking features.', ['Vue Js', 'Express Js', 'MYSQL', 'Bootstrap'], 'bit.ly/37FifFw', 'https://github.com/shofira/ankasa'],
+        ['arkachat.png', 'ArkaChat', 'ArkaChat is a chat application to make it easier for users to communicate with others. This application equipped with real-time chat features, and manage profiles for users.', ['Vue Js', 'Express Js', 'MYSQL', 'Bootstrap', 'Socket.Io'], 'bit.ly/37FifFw', 'https://github.com/shofira/arkaChat'],
+        ['arkahire.png', 'ArkaHire', 'This application is a project team that aims to make it easier for communication between the Company and job seekers in terms of hire jobs. Equipped with sort, search, and chat features.', ['Vue Js', 'Express Js', 'MYSQL', 'Bootstrap', 'Socket.Io'], 'bit.ly/37FifFw', 'https://github.com/shofira/peworld-frontend'],
+        ['arkapos.png', 'ArkaPos', 'It is a Point Of Sale application that aims to assists users in carrying out buying and selling transactions. This application is equipped with sort and crud products.', ['Vue Js', 'Express Js', 'MYSQL', 'Bootstrap'], 'bit.ly/37FifFw', 'https://github.com/shofira/ArkaPos'],
       ]
     }
   },

@@ -17,6 +17,9 @@
       <a href="" v-scroll-to="'#skill'" class="block mt-4 md:inline-block md:mt-0 dark:text-light border-b border-transparent md:focus:border-orange">
         Skill
       </a>
+      <a href="https://api.whatsapp.com/send?phone=+628881932241&text=Hi Fira! Menurutku websitemu itu ..." target="_blank" class="block mt-4 md:inline-block md:mt-0 dark:text-light border-b border-transparent md:focus:border-orange">
+        Feedback
+      </a>
     </div>
   </div>
   <div class="grid md:flex items-center text-center gap-5">

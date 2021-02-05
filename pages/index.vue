@@ -2,7 +2,7 @@
   <div>
     <div id="home" class="grid grid-cols-1 md:grid-cols-2 items-center h-screen">
       <div class="tracking-wide space-y-6 dark:text-light">
-        <p class="text-lg md:text-xl my-20">Welcome!</p>
+        <p class="text-lg md:text-xl mt-20 mb-5">Welcome!</p>
         <h3 class="text-2xl md:text-3xl lg:text-4xl">
           I'm Shofira Khairunnisa
           <div class="flex">

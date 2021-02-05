@@ -4,6 +4,10 @@
     <Icon :icon="x[1]" class="text-2xl" />
     <p class="text-xs">{{ x[2] }}</p>
   </a>
+  <a href="https://api.whatsapp.com/send?phone=+628881932241&text=Hi Fira! Menurutku websitemu itu ..." target="_blank" class="text-center">
+    <Icon icon="lab la-whatsapp text-2xl" />
+    <p class="text-xs">Feedback</p>
+  </a>
 </nav>
 </template>
 
