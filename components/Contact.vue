@@ -15,7 +15,8 @@ export default {
     return {
       contact: [
         ['lab la-github', 'https://github.com/shofira'],
-        ['lab la-linkedin-in', 'https://www.linkedin.com/in/shofirk/']
+        ['lab la-linkedin-in', 'https://www.linkedin.com/in/shofirk/'],
+        ['lab la-dribbble', 'https://dribbble.com/shofirk']
       ],
     }
   },
