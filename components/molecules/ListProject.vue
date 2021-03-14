@@ -26,14 +26,3 @@ export default {
   props: ['url', 'title', 'desc', 'tech', 'scan', 'github'],
 }
 </script>
-
-<style scoped>
-.clamp {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
- }
-.clamp, .line-2{ 
-  -webkit-line-clamp: 2;
-}
-</style>
