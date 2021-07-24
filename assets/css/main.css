@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-outline-primary {
+  @apply border border-primary text-primary py-2 px-4 rounded-md text-sm shadow-md
+}
+.btn-outline-secondary {
+  @apply border border-secondary text-secondary py-2 px-4 rounded-md text-sm shadow-md
+}
+.btn-outline-orange {
+  @apply border border-orange text-orange py-2 px-4 rounded-md text-sm shadow-md
+}
+.btn-outline-primary:focus, :hover
+.btn-outline-orange:focus, :hover
+.btn-outline-secondary:focus, :hover {
+  @apply outline-none shadow-none
+}

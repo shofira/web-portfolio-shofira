@@ -10,9 +10,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "nuxt-i18n": "^6.20.0",
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^3.1.0"
+    "@nuxtjs/color-mode": "^2.0.3",
+    "@nuxtjs/tailwindcss": "^3.1.0",
+    "tailwindcss-dark-mode": "^1.1.7"
   }
 }
